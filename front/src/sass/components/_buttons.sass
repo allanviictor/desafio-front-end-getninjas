@@ -1,0 +1,21 @@
+.wrapper-buttons    
+    @include flex-grid(flex,space-around,center)
+    margin: 30px 50px 50px 50px
+    
+    
+.form-button    
+    margin: 0px 5px 
+    width: 100%
+    padding: 10px
+    border-radius: 8px
+    border: 2px solid transparent
+    padding: 14px 24px
+    cursor: pointer
+    @include text-style(1.25rem,600,initial,initial,center, 0 5px 0 5px)
+    &.submit-button 
+        display: none
+    &.primary
+        @include buttons($white,$blue,$blue,lighten($blue,22%),true)
+    &.secondary 
+        @include buttons($blue,$blue,transparent,$gray,false)
+        

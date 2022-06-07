@@ -1,0 +1,67 @@
+
+.title  
+    @include text-style(2rem,600,normal,$black,center,0px 0px 20px 0px)  
+
+.title-step  
+    @include text-style(1.125rem,600,normal,$black,left,0px 0px 20px 0px) 
+
+.sub-title   
+    @include text-style(1.125rem,600,normal,$black,center,0px 0px 20px 0px) 
+
+.title-last-step    
+    @include text-style(1.5rem,400,normal,$black,center,0px 0px 0px 0px) 
+
+.descrition-last-step   
+    @include text-style(1rem,400,normal,$black,center,12px 0px 0px 0px) 
+    padding: 0px 70px
+    span
+        font-weight: 600
+
+    
+.header 
+    margin: 40px 0 0px 0
+    @include flex-grid(flex,center,center)
+    flex-direction: column
+    img 
+        text-align: center
+
+
+.step   
+    margin-top: 50px
+    margin-right: 50px
+    margin-left: 50px
+    display: none
+    
+
+form
+    height:100%
+
+
+.step.active-step    
+    display: block
+
+.form-list 
+    li 
+        @include flex-grid(flex,initial,center) 
+        @include text-style(1.25rem,400,normal,$black,left,0px 0px 0px 0px) 
+        margin: 8px 0px 
+        cursor: pointer
+    label   
+        margin-left: 10px
+        cursor: pointer
+        width: 100%
+        /* position: relative */
+
+
+.field-required 
+    @include text-style(0.875rem,400,normal,$dark-red,left,5px 0px 0px 0px) 
+    display: block
+    
+.phone-message-confirm  
+    @include text-style(0.875rem,400,normal,$black,left,0px 0px 0px 0px) 
+    margin-top: 25px
+
+.privacy-politics
+    div
+        @include text-style(1.125rem,400,normal,$black,center,0px 0px 0px 0px) 
+        @include flex-grid(flex,initial,center) 

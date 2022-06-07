@@ -1,0 +1,40 @@
+.wrapper-radio 
+    display: block
+    position: relative
+    padding-left: 35px
+    margin-bottom: 12px
+    cursor: pointer
+    font-size: 22px
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    .form-radio 
+        position: absolute
+        opacity: 0
+        cursor: pointer
+        &:checked ~ .checkmark 
+            background-color: $black
+        &:checked ~ .checkmark:after 
+            display: block
+    .checkmark 
+        position: absolute
+        top: 0
+        left: 0
+        height: 20px
+        width: 20px
+        background-color: $white
+        border-radius: 50%
+        &:after 
+            content: ""
+            position: absolute
+            display: none
+            background: $white
+
+    & .checkmark:after 
+        top: 6px
+        left: 6px
+        width: 8px
+        height: 8px
+        border-radius: 50%
+        background: $white

@@ -1,0 +1,31 @@
+@mixin text-style($size,$weight,$style,$color,$align,$margin)     
+    font-size: $size
+    font-weight: $weight
+    font-style: $style
+    color: $color
+    text-align: $align
+    margin: $margin
+
+
+@mixin flex-grid($display,$justify-content,$align-items)
+    display: $display
+    justify-content: $justify-content
+    align-items: $align-items 
+
+
+@mixin buttons($color,$border-color,$background,$hover-bg,$hover-border:false)
+    color: $color
+    border-color: $border-color
+    background: $background
+    transition: all .2s ease 0s
+    &:hover
+        background: $hover-bg
+        transition: all .2s ease 0s
+        @if $hover-border
+            border-color: $hover-bg
+         
+    
+    
+
+
+    

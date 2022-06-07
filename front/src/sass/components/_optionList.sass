@@ -1,0 +1,13 @@
+.options-list   
+    width: 100%
+    li
+        border-bottom: 1px solid $gray
+        padding: 20px
+        @include text-style(1.25rem,400,normal,$black,left, 0 0 0 0) 
+        @include flex-grid(flex,space-between,center)
+        border-radius: 5px
+        cursor: pointer
+        img
+            width: 23px
+        &:hover     
+            background: $gray-hover

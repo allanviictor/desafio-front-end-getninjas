@@ -1,0 +1,31 @@
+.form-input 
+    margin-bottom: 30px
+    position: relative
+    width: 100%
+    &.input-in-list-checkbock
+        margin-bottom: 0px
+    input
+        border: 1px solid #212121
+        width: 100%
+        padding: 8px
+        border-radius: 5px
+        @include text-style(1.25rem,400,normal,$black,left,0 0 0 0 )
+        margin-top: 10px
+    .input-with-checkbox    
+        margin-bottom: 0px
+        margin-top: 0
+    label
+        @include text-style(1.25rem,600,normal,$black,left,0 0 0 0 )
+        .forgotzipcode  
+            position: absolute
+            @include text-style(0.875rem,600,normal,$blue,left,0 0 0 0 )
+            text-transform: none
+            top: 3px
+            right: 0
+            a
+                text-decoration: none 
+            a:visited 
+                color: $blue
+
+
+

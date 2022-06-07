@@ -1,4 +1,4 @@
-{
+export const jsonApi = {
   "_embedded": {
     "request_fields": [
       {
@@ -96,3 +96,4 @@
     ]
   }
 }
+
